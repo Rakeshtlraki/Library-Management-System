@@ -4,7 +4,7 @@ const AdminNavbar = () => {
     return (
         <div className="adminavbar">
             <div className="ad">
-                <h1>Admin Adda</h1>
+                <h1>ADMIN PORTAL</h1>
             </div>
             <div className="navbar"> 
                 <ul>

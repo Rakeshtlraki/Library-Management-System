@@ -22,8 +22,7 @@ const AddUser = () => {
     return (
         <div className="user">
             <h1>ADD-USERS</h1>
-           <div className="adduser">
-           
+                    
             <div className="form">               
                 <form action="" onSubmit={handle}>
                     <div className="title">
@@ -31,7 +30,7 @@ const AddUser = () => {
                     </div>
                     <div className="title">
 
-                        <input value={age} onChange={(e)=>setage(e.target.value)} type="number" min="1" placeholder="Enter your Age" />
+                        <input value={age} onChange={(e)=>setage(e.target.value)} type="num" min="1" placeholder="Enter your Age" />
                     </div>
                     <div className="title">
 
@@ -43,7 +42,7 @@ const AddUser = () => {
                     </div>
                     <button>AddUser</button>
                 </form>
-            </div>
+            
            </div>
         </div>
     );

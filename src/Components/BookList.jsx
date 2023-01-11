@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import '../Styles/BookList.css'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 
 const BookList = () => {
     let [Books, setBook] = useState([])
     let navigate = useNavigate()
-    let parameter=useParams()
+    let parameter = useParams()
+    let location = useLocation()
     useEffect(() => {
         let fetchData = async () => {
             let response = await fetch('http://localhost:4000/books')
@@ -24,7 +25,11 @@ const BookList = () => {
         alert(`${title} will be deleted peramanently`)
     }
     let handle = (id) => {
+       if (location.pathname=='/admin/book-list') {
         navigate(`/admin/book-list/${id}`)
+       } else {
+        navigate(`/user/book-list/${id}`)
+       } 
     }
     return (
         <div className="booklist">
@@ -34,7 +39,7 @@ const BookList = () => {
                     <div className="books">
                         <div className="bk">
                             <div className="image">
-                                <a href="data.shortDescription"><img src={data.thumbnailUrl} alt="" /></a>
+                                <a><img src={data.thumbnailUrl} alt="" /></a>
                             </div>
                             <div className="bok">
                                 <h3>{data.title}</h3>
@@ -42,7 +47,7 @@ const BookList = () => {
                                 <h4>PageCount : {data.pageCount}</h4>
                                 <h4>Categories : {data.categories}</h4>
                                 <button className="btn" onClick={() => handle(data.id)}>Read more....</button>
-                                <button className="btn" onClick={() => remove(data.id, data.title)}>Delete</button>
+                                {location.pathname === '/admin/book-list' && <button className="btn" onClick={() => remove(data.id, data.title)}>Delete</button>}
                             </div>
                         </div>
                     </div>
@@ -51,5 +56,4 @@ const BookList = () => {
         </div>
     );
 }
-
 export default BookList;

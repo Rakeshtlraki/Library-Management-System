@@ -19,7 +19,7 @@ const UserList = () => {
             <h1>User List:{Users.length}</h1>
             <div className="Userssection">
                 {Users.map((data=>
-                  <div className="user">
+                  <div className="userl">
                     <h3>Name:{data.name}</h3>
                     <h3>Age:{data.age}</h3>
                     <h3>Email:{data.email}</h3>

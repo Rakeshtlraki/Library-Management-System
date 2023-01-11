@@ -2,17 +2,30 @@ body{
     margin: 0;
     padding: 0;
 }
+.userlist{
+    background: url('../../public/Images/usBack.avif');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+}
 .userlist h1{
     text-align: center;
     text-transform: uppercase;
+    padding-top: 20px;
+    margin-top: 0;
 }
-.user{
+.userl{
     display: inline-block;
     padding: 20px;
     margin: 20px;
-    border: 2px solid black;
+    border: 2px solid cadetblue;
+    background-color: white;
+    border-radius: 50px;
+    /* box-shadow:  px  5px  5px black,-5px - 5px 5px black; */
+   
 }
-.user button{
+.userl button{
     margin: 0px 95px;
     padding: 6px 20px;
     border: 2px solid orangered;

@@ -1,0 +1,38 @@
+.foorm{
+    position: absolute;    
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; 
+    height: fit-content;
+    border: 2px solid cadetblue; 
+    border-radius: 18px;     
+    background-color: white;
+       
+}
+.tiitle input{
+    height: 40px;
+    width: 400px;
+    font-size: 20px;
+    font-style: italic;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid cadetblue; 
+    color: black;
+}
+.tiitle{
+    padding: 8px 150px;
+}
+.foorm button{
+    margin: 10px 150px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    color: orangered;
+}
+.foorm button:hover{
+    background-color:orangered;
+    color: white;
+    border-radius: 10px;
+
+}
