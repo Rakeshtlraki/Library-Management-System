@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.adduser{
+    position: absolute;    
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px; 
+    border: 2px solid cadetblue; 
+    border-radius: 18px;     
+    background: transparent; 
+}
+

@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.userlist h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.user{
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+}
+.user button{
+    margin: 0px 95px;
+    padding: 6px 20px;
+    border: 2px solid orangered;
+    color: orangered;
+    background-color:white;
+}

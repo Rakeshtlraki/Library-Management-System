@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    padding: 0px;
+     
+ 
+
+}
+.landingPage{
+   
+    background-image:url('../../public/Images/Lback.jpeg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.selectLoginTypeContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:white;
+    padding: 0 30px;
+    padding-bottom: 70px;
+    width: 700px;
+    border-radius: 50px;
+    border: 2px solid cadetblue;
+}
+.selectLoginTypeContainer h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    padding: 10px 0px;
+    color: cadetblue;
+    text-transform: uppercase;    
+}
+.images img{    
+    height: 100px;
+    width: 200px;
+    margin: 0px 0px 0px 100px;
+    padding: 18px 0px;    
+}
+#img2{
+    height: 100px;
+    width: 200px;
+    margin: 0px 0px 30px 110px; 
+    mix-blend-mode: darken;   
+}
+#img1{  
+    border-radius: 18px;
+    margin-bottom: 30px;    
+    mix-blend-mode:darken;
+}
+.btn button{
+    margin-top: 50px;
+    margin: 0px 0px 0px 120px;
+    padding: 10px 35px;
+    background: transparent;
+    color: black;
+}
+.btn1{
+    border: 2px solid orangered;
+}
+.btn .btn2{
+      margin-left: 166px;  
+    border: 2px solid green;
+}
+
+.btn a{
+    text-decoration: none;
+    align-items: center;
+    color: black; 
+    font-size: 25px;   
+}
+.btn .btn1:hover{
+    border: none;
+    background-color:orangered ;
+    color: white;
+}
+.btn .btn2:hover{
+    border: none;
+    background-color: green;
+    color: white;
+}
+.btn a:hover{
+    color: white;
+}

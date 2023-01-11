@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.adminavbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    background-color: coral;
+    padding: 5px 0px;
+    align-items: center;
+    
+}
+
+.ad {
+    display: flex;
+    justify-content: center;
+}
+
+.adminavbar .ad h1 {
+    margin-left: 30px;
+    align-items: center;
+}
+
+.adminavbar .ad img{
+   margin-top: 20px;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.navbar a {
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
